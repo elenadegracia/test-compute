@@ -48,7 +48,7 @@ def main() -> None:
     df = pd.DataFrame(data)
     
     # Devolver 0 y el DataFrame
-    return 0, dfprint("in3_out2 -> error:", exc)
+    return 0, df
 
 
 if __name__ == "__main__":
