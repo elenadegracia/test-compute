@@ -37,6 +37,7 @@ def main() -> None:
         status, df = in3_out2(1, 2, 3)
         print("in3_out2 ->", status)
         print(df)
+        print("final")
     except RuntimeError as exc:
         print("in3_out2 -> error:", exc)
 
