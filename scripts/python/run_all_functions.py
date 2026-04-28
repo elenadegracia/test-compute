@@ -47,8 +47,8 @@ def main():
     }
     df = pd.DataFrame(data)
     
-    # Devolver 0 y el DataFrame
-    return 0, df.to_dict(orient="records")
+    # Devolver 0 y el DataFrame 0 si successfull y 1 si fail
+    return 1, df.to_dict(orient="records")
 
 
 if __name__ == "__main__":
