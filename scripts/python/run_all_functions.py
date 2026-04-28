@@ -19,7 +19,7 @@ import pandas as pd
 # )
 
 
-def main() -> None:
+def main():
     # print("in0_out0 ->", in0_out0())
     # print("in0_out1 ->", in0_out1())
     # print("in0_out2 ->", in0_out2())
@@ -52,4 +52,6 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    status, df = main()
+    print(status)
+    print(df)
