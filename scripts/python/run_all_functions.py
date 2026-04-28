@@ -48,7 +48,7 @@ def main():
     df = pd.DataFrame(data)
     
     # Devolver 0 y el DataFrame
-    return 0, df
+    return 0, df.to_dict(orient="records")
 
 
 if __name__ == "__main__":
