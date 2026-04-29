@@ -74,4 +74,4 @@ def crear_df(n=200, seed=42):
         "activo": booleanos
     })
 
-    return 1, df
+    return 0, df
