@@ -34,25 +34,10 @@ def main()->None:
 
     print("in3_out0 ->", in3_out0(2, 3, 4))
     print("in3_out1 ->", in3_out1(2, 3, 4))
-    try:
-        status, df = in3_out2(1, 2, 3)
-        print("in3_out2 ->", status)
-        print(df)
-        print("final")
-    except RuntimeError as exc:
-    
-    data = {
-        'A': [1, 2, 3],
-        'B': [4, 5, 6]
-    }
-    df = pd.DataFrame(data)
-    
-    # Devolver 0 y el DataFrame 0 si successfull y 1 si fail
-    return 1, df.to_dict(orient="records")
 
 
 if __name__ == "__main__":
-    status, df = main()
+    main()
 
 # def crear_df(n=200, seed=42):
 #     import pandas as pd
