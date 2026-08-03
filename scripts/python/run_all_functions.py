@@ -38,6 +38,7 @@ def main()->None:
 
 if __name__ == "__main__":
     main()
+    #funcio per veure si surten be les taules
 
 # def crear_df(n=200, seed=42):
 #     import pandas as pd
