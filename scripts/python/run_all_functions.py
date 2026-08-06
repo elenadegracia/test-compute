@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 #import pandas as pd
+#otro comentario
 
 from functions import (
     in0_out0,
