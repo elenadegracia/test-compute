@@ -41,15 +41,39 @@
 #     main()
     #funcio per veure si surten be les taules
 
+# def crear_df(n=200, seed=42):
+#     import pandas as pd
+#     import numpy as np
+
+#     np.random.seed(seed)
+#     ids = range(1, n+1)
+#     fechas = pd.date_range("2020-01-01", periods=n, freq="D")
+#     valores = np.random.randn(n)
+#     categorias = np.random.choice(["A", "B", "C", "D"], size=n, p=[0.4, 0.3, 0.2, 0.1])
+#     booleanos = np.random.choice([True, False], size=n)
+
+#     df = pd.DataFrame({
+#         "id": ids,
+#         "fecha": fechas,
+#         "valor": valores,
+#         "categoria": categorias,
+#         "activo": booleanos
+#     })
+
+#     return 0, df
+# cambio para ver si se descarga el zip
+
 def crear_df(n=200, seed=42):
     import pandas as pd
     import numpy as np
 
     np.random.seed(seed)
-    ids = range(1, n+1)
+    ids = range(1, n + 1)
     fechas = pd.date_range("2020-01-01", periods=n, freq="D")
     valores = np.random.randn(n)
-    categorias = np.random.choice(["A", "B", "C", "D"], size=n, p=[0.4, 0.3, 0.2, 0.1])
+    categorias = np.random.choice(
+        ["A", "B", "C", "D"], size=n, p=[0.4, 0.3, 0.2, 0.1]
+    )
     booleanos = np.random.choice([True, False], size=n)
 
     df = pd.DataFrame({
@@ -60,5 +84,4 @@ def crear_df(n=200, seed=42):
         "activo": booleanos
     })
 
-    return 0, df
-# cambio para ver si se descarga el zip
+    return 0, df.to_json(orient="records", date_format="iso")
