@@ -84,4 +84,4 @@ def crear_df(n=200, seed=42):
         "activo": booleanos
     })
 
-    return 1, df.to_json(orient="records", date_format="iso")
+    return 1, df #.to_json(orient="records", date_format="iso")
