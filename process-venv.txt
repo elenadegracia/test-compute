@@ -1,2 +1,2 @@
 --index-url https://pypi.org/simple
-humanize==4.10.0
+humanize==4.11.0
